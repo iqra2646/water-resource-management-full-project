@@ -1,0 +1,96 @@
+{
+   "projects":[
+    {
+        "name": "Borehole construction",
+        "id": 1,
+        "description":" we successfully drilled and constructed a borehole to access underground water resources",
+        "image": "https://media.istockphoto.com/id/941036158/photo/drilling-machinery.jpg?b=1&s=612x612&w=0&k=20&c=oQlSMEszpLJ5OKkwXWKa5DzDJRm9moO8xmtNKDMrKjg="
+    },
+    {
+        "name": "Water Supply Pipe Construction",
+        "id": 2,
+        "description":" we successfully installed a network of pipes to ensure a reliable water supply to the community",
+        "image": "https://images.pexels.com/photos/4440200/pexels-photo-4440200.jpeg?auto=compress&cs=tinysrgb&w=600"
+
+        
+    },
+    {
+        "name": "Research on water management",
+        "id": 3,
+        "description":" we conducted research on water management to optimize conservation strategies and enhance sustainability practices.",
+        "image": "https://images.pexels.com/photos/13862436/pexels-photo-13862436.png?auto=compress&cs=tinysrgb&w=600"
+
+        
+    }
+   ],
+   "galleries":[
+    {
+       
+        "id": 1,
+        "image": "https://img.waterworld.com/files/base/ebm/ww/image/2015/12/th_a_key_to_solving_04.png?auto=format%2Ccompress&w=320"
+    },
+    {
+
+        "id": 2,
+        "image": "https://borgenproject.org/wp-content/uploads/Majik-Water.jpg"
+
+        
+    },
+    {
+
+        "id": 3,
+
+        "image": "https://media.gettyimages.com/id/623002530/photo/kilifi-kenya-kenyan-villagers-wait-a-water-truck-to-get-some-water-as-their-crops-become.jpg?s=612x612&w=0&k=20&c=l9NJectJvNM7RvOBxowBioWhw_s8x1eha6HstZ1UKaE="
+
+        
+    },
+    {
+
+        "id": 4,
+
+        "image": "https://media.gettyimages.com/id/1453283911/photo/climate-change-drought-water-crisis-aerial-view-african-woman-collecting-water-in-plastic.jpg?s=612x612&w=0&k=20&c=u5ZDuqWdXF_Y09B8owgJvByPxKUVqbXGvH22tWKk3fY="
+
+        
+    },
+    {
+
+        "id": 5,
+
+        "image": "https://media.gettyimages.com/id/1025556566/photo/mandera-kenya-20-august-2018-an-elderly-kenyan-woman-goes-to-a-water-well-15-km-away-from-her.jpg?s=612x612&w=0&k=20&c=LltD_DEBieEt3Sncovnk942XTjBT5A6WxXSBXEtBu5Q="
+
+        
+    },
+    {
+
+        "id": 6,
+
+        "image": "https://media.gettyimages.com/id/1025556592/photo/mandera-kenya-three-kenyan-women-carrying-water-on-their-backs-to-bring-the-water-from-a.jpg?s=612x612&w=0&k=20&c=a2uaQbe7Hu3QnsAEXfyoKsgydtSt4zX9TtEDn0CFCjE="
+
+        
+    },
+    {
+
+        "id": 7,
+
+        "image": "https://borgenproject.org/wp-content/uploads/Clean-Water-Initiative-in-Kenya.jpg"
+
+        
+    },
+    {
+
+        "id": 8,
+
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpWDzTM82bzwWSGr8qcYAOH17eFQNO2hHfKjXMDXyFJtJR885BwcJwbHtUZOEOoLbBLo0&usqp=CAU"
+
+        
+    },
+    {
+
+        "id": 9,
+
+        "image": "https://media.gettyimages.com/id/1250885240/photo/northern-kenya-turkana-kenya-people-transporting-water-along-a-highway-in-turkana-climate.jpg?s=612x612&w=0&k=20&c=HbMyKCO7azS3ndJSrTifIrOl0m3qoQalCBJxtnwM9KQ="
+
+        
+    }
+   ]
+}
