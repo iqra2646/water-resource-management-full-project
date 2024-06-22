@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up and Login</title>
+    <style>
+        form {
+            margin-bottom: 20px;
+        }
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Sign Up</h1>
+    <form id="register">
+        <label for="fullName">Full Name:</label>
+        <input type="text" placeholder="Full Name" id="fullName" required>
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="Email Address" id="email" required>
+        <label for="createPassword">Create Password:</label>
+        <input type="password" placeholder="Create Password" id="createPassword" required>
+        
+
+   <button><a href="login.html">login</a></button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerForm = document.getElementById('register');
+            const loginForm = document.getElementById('login');
+
+            registerForm.addEventListener('submit', registerUser);
+            loginForm.addEventListener('submit', loginUser);
+
+            function registerUser(event) {
+                event.preventDefault();
+
+                let fullName = document.getElementById('fullName').value;
+                let email = document.getElementById('email').value;
+                let password = document.getElementById('createPassword').value;
+                let confirmPassword = document.getElementById('confirmPassword').value;
+
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match!');
+                    return;
+                }
+
+                const userObject = {
+                    fullName: fullName,
+                    email: email,
+                    password: password
+                };
+
+                fetch("http://localhost:3000/users", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(userObject)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Registration failed. Please try again.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    alert('Registration successful!');
+                    registerForm.reset();
+                })
+                .catch(error => {
+                    alert(error.message);
+                    console.error('Error:', error);
+                });
+            }
+
+            function loginUser(event) {
+                event.preventDefault();
+
+                let email = document.getElementById('loginEmail').value;
+                let password = document.getElementById('loginPassword').value;
+
+                const loginCredentials = {
+                    email: email,
+                    password: password
+                };
+
+                fetch("http://localhost:3000/users", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(loginCredentials)
+                })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Login failed. Please check your credentials.');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    alert('Login successful!');
+                    document.getElementById('login').reset(); // Reset the form fields
+                    // Redirect to out.html after successful login
+                    window.location.href = 'out.html';
+                })
+                .catch(error => {
+                    alert(error.message);
+                    console.error('Error:', error);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
